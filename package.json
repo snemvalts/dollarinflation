@@ -1,0 +1,17 @@
+{
+  "name": "dollarinflation",
+  "version": "0.0.1",
+  "author": "Sander Nemvalts",
+  "description": "calculate inflation changes of the USD from 1914 until 2014",
+  "main": "./index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/snemvalts/dollarinflation"
+  },
+  "keywords": [
+    "inflation",
+    "dollar",
+    "money"
+  ],
+  "license": "MIT"
+}
