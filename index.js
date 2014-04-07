@@ -4,8 +4,8 @@ function getYear(year){
 	return dollarArray[year-1914];
 }
 module.exports = function(startYear, endYear, amount){
-	if(typeof startYear === "undefined") throw new Error("startYear is not defined.")
-	if(typeof endYear === "undefined") throw new Error("endYear is not defined.")
-	if(typeof amount === "undefined") throw new Error("amount is not defined.")
+	if(typeof startYear !== "number") throw new Error("startYear is not a number")
+	if(typeof endYear !== "number") throw new Error("endYear is not a number")
+	if(typeof amount !== "number") throw new Error("amount is not a number")
 	return (getYear(endYear)/getYear(startYear))*amount;
 }
